@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="css/chat.css">
+
+    <title>Suhayl SH Chat App</title>
+  </head>
+
+  <body>
+    <div class="sh-chat">
+      <img class="sh-chat-logo" src="images/logo.png" />
+
+      <header>
+        <!-- APP TITLE -->
+        <div class="sh-chat-toolbar">
+          <h2>Suhayl_Danysh Chat App</h2>
+        </div>
+
+        <!-- NAME FIELD -->
+        <div class='sh-chat-username-field'>
+          <div class="sh-chat-avatar"><i class="fa fa-bolt"></i></div>
+          <input type='text' id='username' placeholder='Enter your name...'>
+        </div>
+      </header>
+
+      <!-- EMPTY MESSAGE LIST -->
+      <ul id='messages' class="sh-chat-messages"></ul>
+
+      <!-- MESSAGE INPUT FIELD -->
+      <footer>
+        <i class="fa fa-comment-o icon-chat"></i>
+        <input type='text' id='new-message'  placeholder='Type a message...'>
+      </footer>
+    </div>
+
+
+    <!-- FIREBASE, JQUERY -->
+    <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- CHAT.JS FILE -->
+    <script src="js/chat.js"></script>
+  </body>
+</html>
